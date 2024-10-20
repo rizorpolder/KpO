@@ -339,6 +339,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 534b650b671d3bc42bd694ee30ccb8b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _selectButton: {fileID: 4570934276756413201}
+  _text: {fileID: 3945629553394922781}
+  _icon: {fileID: 7956523887761363457}
+  _underline: {fileID: 4593777650237089972}
 --- !u!114 &4570934276756413201
 MonoBehaviour:
   m_ObjectHideFlags: 0

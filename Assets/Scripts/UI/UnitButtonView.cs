@@ -22,15 +22,16 @@ namespace UI
 			_selectButton.onClick.AddListener(OnButtonClickHandler);
 		}
 
-		public void OnButtonClickHandler()
+		private void OnButtonClickHandler()
 		{
-			SetSelectedState();
 			OnButtonClickEvent?.Invoke();
+			SetSelectedState(true);
 		}
 
-		private void SetSelectedState()
+		public void SetSelectedState(bool value)
 		{
-
+			_isSelected = value;
+			_underline.gameObject.SetActive(value);
 		}
 	}
 }
