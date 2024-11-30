@@ -4,6 +4,14 @@ namespace Common.Controllers.SceneController
 {
 	public class SceneController : ISceneControllerData, ISceneControllerCommand, ISceneControllerListener
 	{
+		public event Action OnSceneLoaded;
+		public event Action OnSceneUnloaded;
+
+		public SceneController()
+		{
+			
+		}
+		
 		public void Load()
 		{
 		}
@@ -19,8 +27,5 @@ namespace Common.Controllers.SceneController
 		public void UnloadAsync()
 		{
 		}
-
-		public event Action OnSceneLoaded;
-		public event Action OnSceneUnloaded;
 	}
 }

@@ -1,3 +1,5 @@
+using Common.Controllers.SaveController;
+using Common.Controllers.SceneController;
 using Zenject;
 
 namespace Common
@@ -6,6 +8,8 @@ namespace Common
 	{
 		public override void InstallBindings()
 		{
+			Container.BindInterfacesAndSelfTo<SaveController>().AsSingle();
+			Container.BindInterfacesAndSelfTo<SceneController>().AsSingle();
 		}
 	}
 }

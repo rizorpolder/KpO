@@ -1,6 +1,7 @@
 using System;
+using FirstPhase.Field;
 
-namespace FirstPhase.Field
+namespace FirstPhase.Controllers.FieldController
 {
 	public class FieldController : IFieldCommand, IFieldData, IFieldListener
 	{
